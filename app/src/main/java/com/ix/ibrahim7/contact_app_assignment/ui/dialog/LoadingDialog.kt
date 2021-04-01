@@ -1,4 +1,4 @@
-package com.ix.ibrahim7.contact_app_assignment.ui.fragment.dialog
+package com.ix.ibrahim7.contact_app_assignment.ui.dialog
 
 
 import android.os.Bundle

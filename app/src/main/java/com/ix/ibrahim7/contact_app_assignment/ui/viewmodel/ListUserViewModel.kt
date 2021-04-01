@@ -1,4 +1,4 @@
-package com.ix.ibrahim7.contact_app_assignment.ui.fragment.viewmodel
+package com.ix.ibrahim7.contact_app_assignment.ui.viewmodel
 
 import androidx.lifecycle.ViewModel
 import com.ix.ibrahim7.contact_app_assignment.model.User

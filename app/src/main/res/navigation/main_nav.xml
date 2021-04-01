@@ -3,11 +3,40 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main_nav"
-    app:startDestination="@id/listUserFragment">
+    app:startDestination="@id/homeFragment">
 
     <fragment
         android:id="@+id/listUserFragment"
         android:name="com.ix.ibrahim7.contact_app_assignment.ui.fragment.ListUserFragment"
         android:label="fragment_list_user"
         tools:layout="@layout/fragment_list_user" />
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.ix.ibrahim7.contact_app_assignment.ui.fragment.HomeFragment"
+        android:label="Home">
+        <action
+            android:id="@+id/action_homeFragment_to_listProductFragment"
+            app:destination="@id/listProductFragment"
+            app:enterAnim="@anim/slide_up"
+            app:exitAnim="@anim/slide_down"
+            app:popEnterAnim="@anim/slide_up"
+            app:popExitAnim="@anim/slide_down" />
+    </fragment>
+    <fragment
+        android:id="@+id/listProductFragment"
+        android:name="com.ix.ibrahim7.contact_app_assignment.ui.fragment.ListProductFragment"
+        android:label="All Product">
+        <action
+            android:id="@+id/action_listProductFragment_to_detailsFragment"
+            app:destination="@id/detailsFragment"
+            app:enterAnim="@anim/slide_up"
+            app:exitAnim="@anim/slide_down"
+            app:popEnterAnim="@anim/slide_up"
+            app:popExitAnim="@anim/slide_down" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailsFragment"
+        android:name="com.ix.ibrahim7.contact_app_assignment.ui.fragment.DetailsFragment"
+        android:label="Details Page"
+        tools:layout="@layout/fragment_details" />
 </navigation>

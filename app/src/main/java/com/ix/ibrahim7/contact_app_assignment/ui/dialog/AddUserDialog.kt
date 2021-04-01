@@ -1,18 +1,13 @@
-package com.ix.ibrahim7.contact_app_assignment.ui.fragment.dialog
+package com.ix.ibrahim7.contact_app_assignment.ui.dialog
 
 
-import android.net.Uri
 import android.os.Bundle
 import android.text.TextUtils
-import android.util.Log
 import android.view.*
 import android.widget.EditText
-import androidx.lifecycle.ViewModelProvider
 import com.google.android.material.bottomsheet.BottomSheetDialogFragment
-import com.google.firebase.installations.Utils
 import com.ix.ibrahim7.contact_app_assignment.databinding.AddUserDialogBinding
 import com.ix.ibrahim7.contact_app_assignment.model.User
-import com.ix.ibrahim7.contact_app_assignment.ui.fragment.viewmodel.ListUserViewModel
 
 class AddUserDialog(val onGo: onClickListener) : BottomSheetDialogFragment(){
 
