@@ -1,4 +1,4 @@
-# Contact-App
+# Google-Analytics-App
 
 Simple app that allows me to see all category and each product for each category and allows me to track the Analytics of the app usages.
 
